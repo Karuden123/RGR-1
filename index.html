@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Базовая разметка HTML</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__nav">
+          <button class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="header__nav-items">
+            
+            <div class="header__nav-items-left">
+              <div class="dropdown">
+                <a class="catalog" id="dropbtn" href="#">Каталог</a>
+                <ul class="menu menu_1 dropdown-content" id="catalogMenu">
+                  <li><a href="#">Диваны</a></li>
+                  <li><a href="#">Кресла</a></li>
+                  <li><a href="#">Стулья</a></li>
+                  <li><a href="#">Кровати</a></li>
+                  <li><a href="#">Матрацы</a></li>
+                  <li><a href="#">Пуфы</a></li>
+                  <li><a href="#">Эксклюзивная мебель</a></li>
+                  <li><a href="#">2D-3D модели</a></li>
+                </ul>
+              </div>
+              <li><a href="#">Индивидуальная мебель</a></li>
+              <li><a href="#">Контакты</a></li>
+            </div>
+            <div class="header__logo">
+              <a href="#"
+                ><img
+                  src="media/telegram-cloud-document-2-5233443011957888024 1.svg"
+                  alt=""
+              /></a>
+            </div>
+            <ul class="header__nav-items-right">
+              <li class="delete__elem"><a href="#">О компании</a></li>
+              <li>
+                <a href="#" style="font-family: Open Sans"
+                  >+7 (999)-638-45-37</a
+                >
+              </li>
+            </ul>
+            <div class="dropdown">
+              <li>
+                <a href="#">RU &or;</a>
+                <ul class="menu_2 dropdown-content">
+                  <li><a href="#">Russia</a></li>
+                  <li><a href="#">Belarus</a></li>
+                  <li><a href="#">England</a></li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__left">
+            <h1 class="hero__title">
+              <span style="color: #ff9619">Л</span>УЧШАЯ ЖИЗНЬ, СОЗДАННАЯ ДЛЯ
+              ВАС!
+            </h1>
+            <button class="hero__btn btn">перейти в КАталог</button>
+          </div>
+          <div class="hero__right">
+            <h1 class="hero__right-title">Основано в 1993 году</h1>
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="media/сла1.svg" /></div>
+                <div class="swiper-slide"><img src="media/сла2.svg" /></div>
+                <div class="swiper-slide"><img src="media/сла3.svg" /></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="news">
+      <div class="container">
+        <h1 class="news__global"><span>Н</span>овинки</h1>
+        <div class="news__wrapper">
+          <div class="carousel">
+            <div class="carousel__item">
+              <img src="media/слайдер2.svg" alt="" />
+              <h1 class="swiper__title">ALBA</h1>
+              <p class="swiper__sub-title">15 000 UAH</p>
+            </div>
+
+            <div class="carousel__item">
+              <img src="media/слайдер1.svg" alt="" />
+              <h1 class="swiper__title">Martin</h1>
+              <p class="swiper__sub-title">15 000 UAH</p>
+              <button class="swiper__btn btn">перейти в КАталог</button>
+            </div>
+            <div class="carousel__item">
+              <img src="media/слайдер3.svg" alt="" />
+              <h1 class="swiper__title">Luara</h1>
+              <p class="swiper__sub-title">15 000 UAH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="furniture">
+      <div class="container">
+        <div class="furniture__content">
+          <div class="furniture__left">
+            <img src="media/леон2.svg" />
+          </div>
+          <div class="furniture__right">
+            <h1>
+              <span>И</span>ндивидуальная<br />
+              мебель
+            </h1>
+            <h2>Полный цикл производства.</h2>
+            <p>
+              Качество мягкой мебели начинается<br />
+              задолго до начала ее производства.
+            </p>
+            <button class="furniture__btn btn">Индивидуальная мебель</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="history">
+      <div class="container">
+        <h1 class="history__text"><span>Н</span>аша история</h1>
+        <div class="history__content">
+          <div class="history__left">
+            <div class="history__left-rectangle">
+              <h2>Наработки длинной в 25 лет</h2>
+              <p>
+                Каждый производитель заявляет, что делает<br />
+                все для своих покупателей, но не каждый<br />
+                производитель способен подтвердить свои<br />
+                заявления многолетней историей
+              </p>
+            </div>
+          </div>
+          <div class="history__right">
+            <img src="media/Босфор1.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="age">
+      <div class="container">
+        <div class="age__content">
+          <h2>1993</h2>
+          <h1>25 ЛЕТ</h1>
+          <h2>2021</h2>
+        </div>
+      </div>
+    </section>
+    <section class="publication">
+      <div class="container">
+        <div class="publication__title">
+          <h1><span>П</span>оследние публикации</h1>
+        </div>
+        <div class="publication__content">
+          <div class="publication__block">
+            <img src="media/публикация1.svg" />
+            <h1>Martin</h1>
+          </div>
+          <div class="publication__block">
+            <img src="media/публикация2.svg" />
+            <h1>Alba</h1>
+          </div>
+          <div class="publication__block">
+            <img src="media/публикация32.svg" />
+            <h1>Toscana</h1>
+          </div>
+          <div class="publication__block">
+            <img src="media/публикация4.svg" />
+            <h1>Leonardo</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="helpBlock">
+      <div class="help__container">
+        <div class="help__content">
+          <div class="help__left">
+            <img src="media/20000_Post.svg" />
+          </div>
+          <div class="help__right">
+            <form id="myForm" class="help__form">
+              <div class="form__text">
+                <h1 class="help__text-title">Заполните форму</h1>
+                <h2 class="help__text-sub-title">остались вопросы?</h2>
+              </div>
+              <div class="full__data">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Ваше Имя"
+                />
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                  placeholder="Ваш номер телефона*"
+                />
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  required
+                  placeholder="Страна"
+                />
+                <input
+                  type="text"
+                  id="comment"
+                  name="country"
+                  required
+                  placeholder="Комментарий"
+                />
+
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="agreement"
+                    name="agreement"
+                    class="custom"
+                  />
+                  <label class="form__sogl" for="agreement"
+                    >Подтверждая заказ, я принимаю условия пользовательского
+                    соглашения</label
+                  >
+                </div>
+                <div class="form__btn">
+                  <button class="form__button btn" type="submit">
+                    ЗАПРОСИТЬ ЗВОНОК
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="company">
+      <div class="container">
+        <div class="company__content">
+          <div class="company__blocks">
+            <div class="company__block">
+              <div class="company__text">
+                <h1>1</h1>
+              </div>
+              <p>
+                Осуществляемые компанией «Экми-Мебель» постоянные инвестиции в
+                сертификацию своей продукции, убедительно подтверждают лидерство
+                компании на белорусском рынке высококачественной мягкой мебели.
+              </p>
+            </div>
+            <div class="company__block">
+              <div class="company__text">
+                <h1>2</h1>
+              </div>
+              <p>
+                Фабрика «Экми-мебель» сертифицирована по системе менеджмента
+                качества ISO 9001:2000 на соответствие международным стандартам,
+                представительством «Бюро Веритас» в Беларусси.
+              </p>
+            </div>
+            <div class="company__block">
+              <div class="company__text">
+                <h1>3</h1>
+              </div>
+              <p>
+                Компания «Экми-Мебель» первой из беларусских производителей
+                мягкой мебели обеспечила свою мебель полноценной гарантией и
+                первой обоснованно заявила о лучшем качестве производимой
+                мебели.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="partners__title">
+      <h1><span>Н</span>аши партнеры</h1>
+    </div>
+    <section class="partners">
+      <div class="container">
+        <div class="partners__content">
+          <div class="partners__left">
+            <h1>Компании сотрудничают с нами по всему миру</h1>
+            <p>
+              На данный момент дилерская сеть фабрики «Экми-Мебель» насчитывает
+              более 30 салонов по всей Белоруссии. Сейчас мы заинтересованы в
+              расширении сети и предлагаем выгодные условия для сотрудничества.
+            </p>
+            <p>
+              Основным преимуществом фабрики является изготовление любого
+              индивидуального изделия, мягкой мебели и аксессуаров из наших
+              основных коллекций. Также присутствует линейка оригинальных
+              интерьерных корпусных изделий.
+            </p>
+          </div>
+          <div class="partners__right">
+            <img src="media/Арни2.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="logo">
+      <div class="container">
+        <div class="logo__content">
+          <div class="logo__blocks">
+            <img src="media/vogue-logo-1.svg" />
+            <img src="media/logo2.svg" />
+            <img src="media/logo3.svg" />
+            <img src="media/logo4.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sofa">
+      <div class="container">
+        <div class="sofa__content">
+          <div class="sofa__blocks">
+            <img src="media/sofa1.svg" />
+            <img src="media/sofa2.svg" />
+            <img src="media/sofa3.svg" />
+            <img src="media/sofa4.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer__title">ekmi</div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__blocks">
+            <div class="footer__block">
+              <img src="media/logo-w-1 2.svg" class="footer_logo" />
+            </div>
+            <div class="footer__flex">
+              <div class="footer__block">
+                <ul>
+                  <li><a href="#">Каталог</a></li>
+                  <li><a href="#">о компании</a></li>
+                  <li><a href="#">Индивидуальная мебель</a></li>
+                  <li><a href="#">Партнерам</a></li>
+                  <li><a href="#">Дизайнерам</a></li>
+                </ul>
+              </div>
+              <div class="footer__block">
+                <ul>
+                  <li><a href="#">2D, 3D модели</a></li>
+                  <li><a href="#">Шоу-румы</a></li>
+                  <li><a href="#">Дилерам</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Конфигуратор</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__block">
+              <div class="footer__number">
+                <div class="footer__image">
+                  <img src="media/ICON1.svg" class="footer__icon" />
+                  <img src="media/ICON2.svg" class="footer__icon" />
+                </div>
+                <p class="footer_text">+38 (099)-638-45-37</p>
+              </div>
+              <button class="btn">Персональная консультация</button>
+            </div>
+          </div>
+          <div class="footer__end">© 1993–2021 Интернет-магазин «EKMI™»</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
